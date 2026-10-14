@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bio do Patrik</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="pagina">
+
+  <header class="topo">
+    <span class="logo">&#9654; BIO.EXE</span>
+    <div class="topo-botoes">
+      <button class="mini" id="moeda" type="button" aria-label="Inserir moeda">
+        <span class="moeda-icone" aria-hidden="true"></span> x <span id="moedas">000</span>
+      </button>
+      <button class="mini" id="tema" type="button" aria-pressed="false">TEMA</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="nome">
+      <div class="hero-texto">
+        <p class="start">PRESS START</p>
+        <h1 id="nome">PATRIK</h1>
+        <p class="funcoes">Estudante &middot; Dev &middot; Gamer retr&ocirc; &middot; Criador</p>
+        <p class="linha">&gt; <span id="digitando">estudo no IFSC</span><span class="cursor" aria-hidden="true"></span></p>
+        <div class="acoes">
+          <a class="btn" href="#sobre">Come&ccedil;ar</a>
+          <a class="btn alt" href="#links">Contato</a>
+        </div>
+      </div>
+      <div class="tela">
+        <canvas id="sprite" width="14" height="14" role="img" aria-label="Personagem em pixel art do Patrik. Clique para ele pular."></canvas>
+        <p class="tela-legenda">JOGADOR 1</p>
+      </div>
+    </section>
+
+    <section class="caixa dialogo" id="sobre" aria-labelledby="sobre-titulo">
+      <h2 id="sobre-titulo">Sobre mim</h2>
+      <p><strong>PATRIK:</strong> Oi! Eu estudo no IFSC e programo em HTML, CSS e JavaScript. Nas horas livres eu jogo jogos retr&ocirc; e crio conte&uacute;do. Esta p&aacute;gina &eacute; a minha apresenta&ccedil;&atilde;o: tudo o que eu fa&ccedil;o fica por aqui.</p>
+      <span class="seta" aria-hidden="true">&#9660;</span>
+    </section>
+
+    <section class="caixa" aria-labelledby="status-titulo">
+      <h2 id="status-titulo">Status</h2>
+      <ul class="skills">
+        <!-- Troque o valor de --lv (de 1 a 10) para mudar o n&iacute;vel -->
+        <li>
+          <span class="skill-nome">HTML</span>
+          <span class="bar" style="--lv:8"><i></i></span>
+          <span class="skill-lv">LV 8</span>
+        </li>
+        <li>
+          <span class="skill-nome">CSS</span>
+          <span class="bar" style="--lv:7"><i></i></span>
+          <span class="skill-lv">LV 7</span>
+        </li>
+        <li>
+          <span class="skill-nome">JavaScript</span>
+          <span class="bar" style="--lv:6"><i></i></span>
+          <span class="skill-lv">LV 6</span>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="missoes-titulo">
+      <h2 id="missoes-titulo" class="titulo-solto">Miss&otilde;es</h2>
+      <div class="missoes">
+        <article class="caixa">
+          <h3>Estudo</h3>
+          <p class="tag">IFSC</p>
+          <p>Aprendo no IFSC e levo o que vejo em aula para os meus projetos.</p>
+        </article>
+        <article class="caixa">
+          <h3>C&oacute;digo</h3>
+          <p class="tag">HTML &middot; CSS &middot; JS</p>
+          <p>P&aacute;ginas e projetos feitos do zero, com calma e muito teste.</p>
+        </article>
+        <article class="caixa">
+          <h3>Jogos</h3>
+          <p class="tag">Retr&ocirc;</p>
+          <p>Pixel grande, m&uacute;sica de chip e jogo que n&atilde;o deixa salvar. Zerar &eacute; a meta.</p>
+        </article>
+        <article class="caixa">
+          <h3>Conte&uacute;do</h3>
+          <p class="tag">Criador</p>
+          <p>Fa&ccedil;o conte&uacute;do sobre o que estudo, programo e jogo.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="caixa continue" id="links" aria-labelledby="links-titulo">
+      <h2 id="links-titulo">Continue?</h2>
+      <p>Me encontra por aqui:</p>
+      <div class="acoes">
+        <!-- Troque cada href="#" pelo link do seu perfil -->
+        <a class="btn" href="#">Instagram</a>
+        <a class="btn" href="#">YouTube</a>
+        <a class="btn" href="#">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>&copy; 2026 Patrik &middot; feito &agrave; m&atilde;o com HTML, CSS e JavaScript</p>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
